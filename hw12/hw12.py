@@ -19,12 +19,12 @@ def geocoderesult(address,benchmark='Public_AR_Current',vintage='ACS2018_Current
 
 def cal_distance(loc1, loc_w):
     lat1,lon1 = loc1
-    lat2,lon2 =loc_w
+    lat2,lon2 = loc_w
     
-    lon1 = lon1 * (3.14 / 180)
-    lon2 = lon2 * (3.14 / 180)
-    lat1 = lat1 * (3.14 / 180)
-    lat2 = lat2 * (3.14 / 180)
+    lon1 = lon1 * 0.017453293
+    lon2 = lon2 * 0.017453293
+    lat1 = lat1 * 0.017453293
+    lat2 = lat2 * 0.017453293
 
     dlon = lon2 - lon1
     dlat = lat2 - lat1
